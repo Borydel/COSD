@@ -1,0 +1,1116 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:sdg="http://purl.unep.org/sdg/sdgio.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:env="http://purl.obolibrary.org/obo/envo.owl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasSynonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isAntonymOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isAntonymOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isSynonymOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isSynonymOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasMethod">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isMethodOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasMode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasMode">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isModeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasReference -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasReference">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isReferenceOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isReferencedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasResult">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isResultOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasVersion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasVersion">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isVersionOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#includes">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#includes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Life_on_land"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#includes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_degrowth"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isMethodOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isMethodOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isModeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isModeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isReferenceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isReferenceOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isReferencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isReferencedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isRequiredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isRequiredBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#requires"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isResultOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isResultOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isUsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isUsedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#uses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_sustainable_development"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_value"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isUsedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_sustainable_development"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isVersionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isVersionOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#requires"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#uses"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasNumberGoals -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasNumberGoals">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasParameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasPerformer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasPerformer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasStandard -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasStandard">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasStandard"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_age"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_color"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_count"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_final_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_final_date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_height"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_length -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_length">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_period -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_period"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_start_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_start_date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_weight"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_width -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#has_width"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isValueOf -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#isValueOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#is_implemented_on -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#is_implemented_on"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#is_posted_on -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#is_posted_on"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/Industry,_Innovation,_and_Infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/Industry,_Innovation,_and_Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Affordable_and_clean_energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Affordable_and_clean_energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Broad_participation_and_effective_partnerships -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Broad_participation_and_effective_partnerships">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_Sustainable_Development_Strategy_principle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#CSD_indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#CSD_indicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Clean_water_and_sanitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Clean_water_and_sanitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Climate_action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Climate_action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Content_SD_indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Content_SD_indicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Corporate_Social_Responsibility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Corporate_Social_Responsibility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Country_ownership_and_commitment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Country_ownership_and_commitment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_Sustainable_Development_Strategy_principle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Decent_work_and_economic_growth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Decent_work_and_economic_growth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Degrowth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Degrowth">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Intelligent_growth"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <rdfs:comment>Reducing production and consumption to maximize happiness and well-being through non-consumptive meansвЂ”sharing work, consuming less, while devoting more time to art, music, family, nature, culture and community.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Development_of_the_necessary_capacity_and_enabling_environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Development_of_the_necessary_capacity_and_enabling_environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_Sustainable_Development_Strategy_principle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Development_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Development_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_sustainable_development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_sustainable_development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_dimension"/>
+        <hasSynonym>Economic Systainability</hasSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_value">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Environmental_quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Environmental_quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Environmental_sustainable_development"/>
+        <rdfs:comment>A set of properties and characteristics of the environment, either generalized or local, as they impinge on human beings and other organisms.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Environmental_sustainable_development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Environmental_sustainable_development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_dimension"/>
+        <rdfs:comment></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Focus_on_outcomes_and_means_of_implementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Focus_on_outcomes_and_means_of_implementation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_Sustainable_Development_Strategy_principle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Gender_equality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Gender_equality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Good_health_and_well-being_for_people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Good_health_and_well-being_for_people">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Intelligent_growth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Intelligent_growth">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Process"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Life_below_water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Life_below_water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Life_on_land -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Life_on_land">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_SDI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_SDI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_Sustainable_Development_Strategy_principle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_Sustainable_Development_Strategy_principle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_strategy_of_SD"/>
+        <rdfs:comment xml:lang="en">A co-ordinated set of participatory and continuously improving processes of analysis, debate, capacity-strengthening, planning and investment, which integrates the economic, social and environmental objectives of society, seeking trade offs where this is not possible.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">OECD DAC (2001)</rdfs:isDefinedBy>
+        <rdfs:seeAlso xml:lang="en">NSDS principle</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_strategy_of_SD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_strategy_of_SD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_strategy"/>
+        <rdfs:comment>A coordinated, participatory and iterative process of thoughts and actions to achieve economic, environmental and social objectives in a balanced and integrative manner.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.un.org/esa/sustdev/natlinfo/nsds/bgnote_nsdsmap.pdf</rdfs:isDefinedBy>
+        <rdfs:seeAlso>national sustainable development strategy (NSDS)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#No_poverty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#No_poverty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Partnership_for_the_goals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Partnership_for_the_goals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Performance_SD_indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Performance_SD_indicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Process">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Quality_education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Quality_education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Reducing_inequalities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Reducing_inequalities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Responsible_consumption_and_production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Responsible_consumption_and_production">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_Equality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_Equality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_Equity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_Equity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_dimension"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Strong_SD_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Strong_SD_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainability_transition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainability_transition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+        <rdfs:comment>A transition towards more sustainable system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_agriculture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_agriculture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_business -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_cities_and_communities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_cities_and_communities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_culture_development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_culture_development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development"/>
+        <rdfs:seeAlso xml:lang="en">cultural sustainability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_degrowth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_degrowth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Degrowth"/>
+        <isAntonymOf></isAntonymOf>
+        <rdfs:comment xml:lang="en">A downscaling of production and consumption that increases human well-being and enhances ecological conditions and equity on the planet.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_democracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_democracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development">
+        <isAntonymOf>unsustainable development</isAntonymOf>
+        <rdfs:comment>A development that meets the needs of the present without compromising the ability of future generations to meet their own needs.</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">SD</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_assessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_assessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_culture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_culture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+        <rdfs:comment>Maintaining of cultural beliefs, cultural practices, heritage conservation, culture as its own entity, and attempts to answer the question of whether or not any given cultures will exist in the context of the future.</rdfs:comment>
+        <rdfs:seeAlso>Cultural sustainability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_cycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_cycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <rdfs:comment>A cycle of continuous activities which assure sustainable development of any process.вЂ“ continuous cycle of activities which assure sustainable development of any process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+        <rdfs:comment xml:lang="en">A global action of ending poverty, protecting the planet and ensuring that all people enjoy peace and prosperity.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_indicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+        <hasSynonym>Systainablle development metrics</hasSynonym>
+        <rdfs:comment xml:lang="en">A statistical measure of the sustainability of social, environmental and economic development.</rdfs:comment>
+        <rdfs:seeAlso>SDI</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_strategy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_target"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Development_strategy"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+        <rdfs:comment>A set of instruments and ways of working which enable sustainable development challenges to be tackled in a coherent and dynamic way.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_target -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_target">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+        <rdfs:comment xml:lang="en">An action to achieve concrete SD goal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_industry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Economic_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Triple_Bottom_Line_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Triple_Bottom_Line_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_dimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_dimension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_indicator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_indicator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_sustainable_development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_sustainable_development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Weak_SD_model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Weak_SD_model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Type_of_SD_by_model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Zero_hunger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Zero_hunger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Integration_of_economic,_social_and_environmental_policy_across_sectors,National_integrity_of_SD_policy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Integration_of_economic,_social_and_environmental_policy_across_sectors,National_integrity_of_SD_policy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#National_Sustainable_Development_Strategy_principle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Peace,_justice_and_strong_institution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Peace,_justice_and_strong_institution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_goal"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#CSD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#CSD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Commission_of_Sustainable_Development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Commission_of_Sustainable_Development">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Division_of_Sustainable_Development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Division_of_Sustainable_Development">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Human_Development_Indicator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Human_Development_Indicator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Social_sustainable_development"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_indicator"/>
+        <rdfs:isDefinedBy>http://hdr.undp.org/en/composite/Dashboard2</rdfs:isDefinedBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Millennium_Development_Goals_Indicator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Millennium_Development_Goals_Indicator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_indicator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Mountain_Green_Cover_Index -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Mountain_Green_Cover_Index">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Environmental_sustainable_development"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Red_List_Index -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Red_List_Index">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Environmental_sustainable_development"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#UN-DESA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#UN-DESA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_organization"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#International_Health_Regulations_(IHR) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#International_Health_Regulations_(IHR)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Good_health_and_well-being_for_people"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#International_Labour_Organization_(ILO) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#International_Labour_Organization_(ILO)"/>
+    
+
+
+    <!-- http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#World_Health_Organization_(WHO) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#World_Health_Organization_(WHO)"/>
+    <rdf:Description>
+        <rdfs:comment xml:lang="en">Development that meets the needs of the present, without compromising the ability of future generations to meet their own needs.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ex1</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_target"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EX2</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#i"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ex3</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#Sustainable_development_indicator"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderBy"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#c"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/boriana/ontologies/2018/3/untitled-ontology-5#c"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
